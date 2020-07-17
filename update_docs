@@ -1,8 +1,15 @@
+
 git add .
 git commit -m "udpate docs"
 pxt clean 
 pxt staticpkg
 
+cd ..
+if [ ! -d "$Teknikio.github.io" ]; then
+  git clone https://github.com/Teknikio/Teknikio.github.io.git
+fi
+
+cp pxt-sample/built/packaged/docs
 
 for Y in {2020..2020}
 do
