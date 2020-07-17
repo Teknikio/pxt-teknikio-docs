@@ -14,7 +14,7 @@ rsync -av --progress built/packaged/docs/. ../Teknikio.github.io/docs_test/
 
 date=$(date '+%Y-%m-%d %H:%M:%S')
 
-cd ..
+cd ../Teknikio.github.io
 git add .
 git commit -m "doc updates"
 git branch date
