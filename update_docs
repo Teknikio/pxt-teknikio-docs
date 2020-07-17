@@ -11,3 +11,12 @@ fi
 
 cd pxt-sample
 rsync -av --progress built/packaged/docs/. ../Teknikio.github.io/docs_test/ 
+
+date=$(date '+%Y-%m-%d %H:%M:%S')
+
+cd ..
+git add .
+git commit -m "doc updates"
+git branch date
+git checkout date
+git pull-request master
