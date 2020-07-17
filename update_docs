@@ -11,6 +11,5 @@ fi
 
 cd pxt-sample
 rsync -r built/packaged/docs/. ../Teknikio.github.io/docs_test
-cp pxt-sample/built/packaged/docs/. Teknikio.github.io/docs_test
 
 
