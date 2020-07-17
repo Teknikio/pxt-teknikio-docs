@@ -53,3 +53,16 @@ pxt update
 ```
 
 More instructions at https://github.com/Microsoft/pxt#running-a-target-from-localhost 
+
+
+## Makeing changes to documents
+
+Make any changes or additions to documents included in the "docs" folder
+
+After you are finished, open a terminal insde of this repo and run
+
+```
+bash update_docs
+```
+
+which will generate the documents and then copy the result to the docs location inside the Teknikio Github.io repo
