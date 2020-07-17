@@ -1,0 +1,18 @@
+git add .
+git commit -m "udpate docs"
+
+
+
+for Y in {2020..2020}
+do
+  for M in {06..06}
+  do
+    for D in {12..12}
+    do
+      for S in {0..0}
+		do
+     	echo "Committed on $M/$D/$S" > commit.md
+		done
+    done
+  done
+done
