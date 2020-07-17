@@ -12,7 +12,7 @@ fi
 cd pxt-sample
 rsync -av --progress built/packaged/docs/. ../Teknikio.github.io/docs_test/ 
 
-date=$(date '+%Y-%m-%d_%H:%M:%S')
+date=$(date '+%Y_%m_%d_%H_%M_%S')
 
 cd ../Teknikio.github.io
 git add .
