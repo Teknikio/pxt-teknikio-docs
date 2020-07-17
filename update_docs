@@ -9,18 +9,6 @@ if [ ! -d "$Teknikio.github.io" ]; then
   git clone https://github.com/Teknikio/Teknikio.github.io.git
 fi
 
-cp pxt-sample/built/packaged/docs
+cd pxt-sample/built/packaged
+cp docs Teknikio.github.io/docs_test
 
-for Y in {2020..2020}
-do
-  for M in {06..06}
-  do
-    for D in {12..12}
-    do
-      for S in {0..0}
-		do
-     	echo "Committed on $M/$D/$S" > commit.md
-		done
-    done
-  done
-done
