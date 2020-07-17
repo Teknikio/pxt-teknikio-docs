@@ -18,5 +18,5 @@ cd ../Teknikio.github.io
 git add .
 git commit -m "doc updates"
 git branch date
-git checkout date
-git pull-request master
+git checkout $date
+git push origin $date
