@@ -10,6 +10,6 @@ if [ ! -d "$Teknikio.github.io" ]; then
 fi
 
 cd pxt-sample
-rsync -r built/packaged/docs/. ../Teknikio.github.io/docs_test
+rsync -r built/packaged/docs/ ../Teknikio.github.io/docs_test
 
 
