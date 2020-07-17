@@ -8,6 +8,9 @@ cd ..
 if [ ! -d "$Teknikio.github.io" ]; then
   git clone https://github.com/Teknikio/Teknikio.github.io.git
 fi
- 
-cp /pxt-sample/built/packaged/docs/. Teknikio.github.io/docs_test
+
+cd pxt-sample
+rsync -r built/packaged/docs/. ../Teknikio.github.io/docs_test
+cp pxt-sample/built/packaged/docs/. Teknikio.github.io/docs_test
+
 
