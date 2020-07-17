@@ -10,5 +10,5 @@ if [ ! -d "$Teknikio.github.io" ]; then
 fi
 
 cd pxt-sample/built/packaged
-cp docs Teknikio.github.io/docs_test
+rsync -r docs Teknikio.github.io/docs_test
 
