@@ -4,9 +4,10 @@ git commit -m "udpate docs"
 pxt clean 
 pxt staticpkg
 
-
+cd ..
+if [ ! -d Teknikio.github.io ]; then
+  git clone https://github.com/Teknikio/Teknikio.github.io.git
+fi
 
 cd pxt-sample
-
-
 rsync -av --progress built/packaged/docs/. ../Teknikio.github.io/docs_test/ 
