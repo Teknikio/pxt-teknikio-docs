@@ -9,7 +9,7 @@ cd ..
 if [ ! -d Teknikio.github.io ]; then
   git clone https://github.com/Teknikio/Teknikio.github.io.git
 else
-  cd ../Teknikio.github.io
+  cd Teknikio.github.io
   git pull origin master
   cd ..
 fi
